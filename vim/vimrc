@@ -1,0 +1,25 @@
+s
+t number
+set hlsearch
+syntax on
+set showmode
+set showcmd
+set autoindent
+set tabstop=2
+set shiftwidth=4
+set wrap
+set textwidth=80
+set expandtab
+set cursorline
+set relativenumber
+set ignorecase
+set smartcase
+
+
+
+
+call plug#begin()
+
+" List your plugins here
+Plug 'vim-airline/vim-airline'
+call plug#end()

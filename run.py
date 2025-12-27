@@ -2,13 +2,16 @@ import os
 import shutil
 
 
-def move_zshrc():
-    shutil.copy(".zshrc", os.path.expanduser("~/.zshrc"))
-    
+def cp_vim():
+    shutil.copy("vim/vimrc", os.path.expanduser("~/.vim/vimrc"))
 
+
+def cp_zshrc():
+    shutil.copy(".zshrc", os.path.expanduser("~/.zshrc"))
 
 def main():
-    move_zshrc()
+    cp_vim()
+    cp_zshrc()
 
 
 if __name__ == "__main__":
